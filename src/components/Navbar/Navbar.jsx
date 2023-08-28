@@ -7,7 +7,7 @@ import {motion} from 'framer-motion'
 
 const Navbar = () => {
 
-  const navLinks = ['home' , 'about' ,  'work' , 'skills' , 'testimonials' , 'contact' ]
+  const navLinks = ['home' , 'about' ,  'work' , 'skills' , 'contact' ]
   const [toggle, setToggle] = useState(false);
 
   return (
