@@ -12,7 +12,7 @@ const SocialMedia = () => {
           target="_blank"
           rel="noreferrer"
         >
-w          <BsTwitter />
+          <BsTwitter />
         </a>
       </div>
       <div>
