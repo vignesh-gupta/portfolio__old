@@ -30,3 +30,6 @@ yarn-error.log*
 # Next files
 .next
 next-env.d.ts
+
+# envs
+.env
