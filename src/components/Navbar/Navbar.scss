@@ -1,16 +1,63 @@
+.app__head{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+
+}
+
+.app__note {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  color: aliceblue;
+  background: #feac5e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4bc0c8,
+    #c779d0,
+    #feac5e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4bc0c8,
+    #c779d0,
+    #feac5e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  position: relative;
+}
+
+.app__note-link {
+  color: azure;
+  margin: 0 5px;
+  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  &:hover {
+    color: #a3aed6;
+  }
+}
+
+.app__note-cancel{
+  position: absolute;
+  right: 10px;
+  margin-left: 20px;
+}
+
 .app__navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.18);
-  position: fixed;
-  left: 0;
-  right: 0;
-  z-index: 2;
+  border-top: 0;
 }
 
 .app__navbar-logo {

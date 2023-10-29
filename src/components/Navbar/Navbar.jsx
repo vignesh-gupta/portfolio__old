@@ -9,8 +9,29 @@ const Navbar = () => {
   const navLinks = ["home", "about", "work", "skills", "contact"];
   const [toggle, setToggle] = useState(false);
 
+  const [isNoteVisible, setIsNoteVisible] = useState(true);
+
   return (
-    <>
+    <header className="app__head">
+      {isNoteVisible && (
+        <div className="app__note">
+          <p>
+            ✨ Hello there! The portfolio has a new look & feel.
+            <a
+              className="app__note-link"
+              href="https://vigneshgupta.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Check it out!
+            </a>
+          </p>
+          <HiX
+            className="app__note-cancel"
+            onClick={() => setIsNoteVisible(false)}
+          />
+        </div>
+      )}
       <nav className="app__navbar">
         <div className="app__navbar-logo">
           <img src={images.logo} alt="logo" />
@@ -48,7 +69,7 @@ const Navbar = () => {
           )}
         </div>
       </nav>
-    </>
+    </header>
   );
 };
 
