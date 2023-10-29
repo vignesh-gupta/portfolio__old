@@ -6,6 +6,7 @@ import profile from '../assets/profile.png';
 import circle from '../assets/circle.svg';
 import logo from '../assets/logo.png';
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
   graphql,
   redux,

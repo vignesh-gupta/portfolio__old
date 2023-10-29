@@ -1,19 +1,18 @@
-import React from 'react';
+import React from "react";
 
-import './App.scss'
+import "./App.scss";
 
-import { About , Footer , Header , Skills , Work  } from './container';
-import { Navbar } from './components';
-
+import { About, Footer, Header, Skills, Work } from "./container";
+import { Navbar } from "./components";
 
 function App() {
   return (
     <div className="app">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <Navbar />
       <Header />
       <About />
-      <Work /> 
+      <Work />
       <Skills />
       {/* <Testimonial /> */}
       <Footer />
